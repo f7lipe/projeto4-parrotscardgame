@@ -1,7 +1,14 @@
 @media (max-widht: 614px) {
 
-body{
-    background: crimson;
-}
+    header h1{
+        font-size: 20px;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 50px;
+    }
     
 }

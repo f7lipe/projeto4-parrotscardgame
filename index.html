@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parrot Card Game</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flipper.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/normalize.css">
     
@@ -13,48 +14,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <h1>PARROT CARD GAME</h1>
     </header>
     <main>
         <div class="cards">
-            <div class="card">
-                <img src="/images/bobrossparrot.gif" alt="">
-            </div>
 
-            <div class="card">
-                <img src="/images/bobrossparrot.gif" alt="">
+            <div class="card"  onclick="selectCard(this)" >
+                <div class="face back-face">
+                    <img src="images/bobrossparrot.gif" alt="">
+                </div>
+                <div class="face front-face">
+                    <img src="images/front.png" alt="">
+                </div>
             </div>
-
-            <div class="card">
-                <img src="/images/bobrossparrot.gif" alt="">
-            </div>
-
-            <div class="card">
-                <img src="/images/bobrossparrot.gif" alt="">
-            </div>
-
-            <div class="card">
-                <img src="/images/bobrossparrot.gif" alt="">
-            </div>
-
-            <div class="card">
-                <img src="/images/bobrossparrot.gif" alt="">
-            </div>
-
-            <div class="card">
-                <img src="/images/bobrossparrot.gif" alt="">
-            </div>
-
-            <div class="card">
-                <img src="/images/bobrossparrot.gif" alt="">
-            </div>
-
-            <div class="card">
-                <img src="/images/bobrossparrot.gif" alt="">
-            </div>
+            
+            
         </div>
     </main>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

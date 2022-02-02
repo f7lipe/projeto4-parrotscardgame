@@ -1,0 +1,33 @@
+.face {
+    width: 146px;
+    height: 177px;
+    background-color: #A7E9AF;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: all .5s;
+    transform-style: preserve-3d;
+  }
+
+
+
+/*Comportamento padrão- carta virada pra tras */ 
+.back-face{
+  transform: rotateY(180deg);
+}
+
+/*Quando o usuário clicar na carta - vira para frente */
+.card.virado .back-face{
+  transform: rotateY(0deg);
+}
+
+/*Quando o usuário clicar na carta - vira para tras */
+.card.virado .front-face{
+  transform: rotateY(-180deg);
+}
+
+
