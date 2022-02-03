@@ -21,12 +21,12 @@
 }
 
 /*Quando o usuário clicar na carta - vira para frente */
-.card.virado .back-face{
+.card.flipped .back-face{
   transform: rotateY(0deg);
 }
 
 /*Quando o usuário clicar na carta - vira para tras */
-.card.virado .front-face{
+.card.flipped .front-face{
   transform: rotateY(-180deg);
 }
 

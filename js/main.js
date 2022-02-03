@@ -1,6 +1,6 @@
 
 function selectCard(card) {
-    card.classList.toggle('virado')
+    card.classList.toggle('flipped')
 }
 
 // Retorna um número recebido via prompt
@@ -19,12 +19,30 @@ function verifyNumber(number) {
     }
 }
 
+function addCards(numberOfCards) {
+    let cards = document.querySelector('.cards')
+    for (let i=0; i<numberOfCards; i++){
+        let card = `            
+        <div class="card" onclick="selectCard(this)" >
+        <div class="face back-face">
+            <img src="images/bobrossparrot.gif" alt="">
+        </div>
+        <div class="face front-face">
+            <img src="images/front.png" alt="">
+        </div>
+    </div>`
+        cards.innerHTML += card
+    }
+    
+}
+
 let askedNumber = 0
 window.onload = function () {
     while (evenNumber === false){
         askedNumber = askCardNumber()
         if (verifyNumber(askedNumber)){
             //adicionar cartas 
+            addCards(askedNumber)
         }
    }
 }
