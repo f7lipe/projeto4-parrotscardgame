@@ -1,7 +1,11 @@
-@media (max-widht: 614px) {
+@media  screen and (max-widht: 700px) {
+
+    header{
+        position: fixed;
+    }
 
     header h1{
-        font-size: 20px;
+        font-size: 200px;
     }
 
     .cards{

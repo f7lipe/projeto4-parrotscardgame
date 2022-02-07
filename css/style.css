@@ -18,8 +18,19 @@ body{
 header h1{
     color: var(--limonGreen);
     font-family: 'Roboto', sans-serif;
+}
 
+header .metrics{
+    display: flex;
+    justify-content: space-around;
+}
 
+.metrics ion-icon{
+font-size: 24px;
+}
+
+.metrics span{
+    font-size: 20px;
 }
 
 .cards{
@@ -41,3 +52,5 @@ header h1{
     width: 100px;
     height: 100px;
 }
+
+
